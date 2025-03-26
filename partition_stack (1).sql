@@ -30,7 +30,7 @@ PARTITION BY date(creation_date)
   cluster by id,title,body;
   
   
- -- PARTITION BY
+ -- PARTITION 
  --date(creation_date);
   
 --load data from non partition table to new partition table   
