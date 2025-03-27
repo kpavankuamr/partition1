@@ -31,7 +31,7 @@ PARTITION BY date(creation_date)
   
   --EQUAL TO PARTITIOON
  -- PARTITION BY FILE
-
+ --CLUSTRER BY ID ,TITLE,BODY
  date(creation_date);
   
 --load data from non partition table to new partition table   
