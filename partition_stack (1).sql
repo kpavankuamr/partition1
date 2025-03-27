@@ -29,9 +29,10 @@ create table if not exists pavankumar123.partition_sales as select * FROM bigque
 PARTITION BY date(creation_date)
   cluster by id,title,body;
   
-  
- -- PARTITION 
- --date(creation_date);
+  --EQUAL TO PARTITIOON
+ -- PARTITION BY FILE
+
+ date(creation_date);
   
 --load data from non partition table to new partition table   
 insert into 'partition_sales.stack_data_partition' select * from partition_sales.sales;
